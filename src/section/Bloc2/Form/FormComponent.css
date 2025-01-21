@@ -1,0 +1,109 @@
+/* Container của form */
+.form-container {
+    /* background-color: #fff5f5; */
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 20px;
+    /* max-width: 600px; */
+    margin: 20px auto;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Nhóm form */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Label */
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  /* Input và textarea */
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f2bdbd;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #4d4d4d;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover và focus input/textarea */
+  input:focus,
+  textarea:focus {
+    border-color: #ff8576;
+    background-color: #fffafa;
+    box-shadow: 0 0 4px #ff8576;
+  }
+  
+  /* File upload */
+  .file-upload {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .file-upload .file-icon {
+    font-size: 1.5rem;
+    color: #ff8576;
+  }
+  
+  .file-upload .file-text {
+    font-size: 1rem;
+    color: #824242;
+    cursor: pointer;
+  }
+  
+  .file-upload input[type="file"] {
+    display: none;
+  }
+  
+  .file-upload small {
+    font-size: 0.8rem;
+    color: #9a9a9a;
+  }
+  
+  /* Nút hành động */
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .clear-button,
+  .submit-button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .clear-button {
+    background-color: #f7d7d7;
+    color: #824242;
+  }
+  
+  .clear-button:hover {
+    background-color: #ffc1c1;
+  }
+  
+  .submit-button {
+    background-color: #ff8576;
+    color: #fff;
+  }
+  
+  .submit-button:hover {
+    background-color: #ff6456;
+  }
+  
+
+  /* editor */

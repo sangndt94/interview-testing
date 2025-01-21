@@ -1,0 +1,116 @@
+nav {
+    background-color: #562C2CB2 !important
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Căn đều hai bên */
+    width: 100%;
+    padding: 10px 20px;
+    background-color: white; /* Hoặc màu bạn muốn */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+  }
+  
+  .header-nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Đảm bảo khoảng cách giữa logo và menu */
+    width: 100%;
+  }
+  
+  .header-nav .container .logo {
+    flex-shrink: 0; /* Giữ logo luôn cố định kích thước */
+  }
+  
+  .header-nav .container .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Khoảng cách đều giữa các mục */
+    flex-grow: 1;
+  }
+  
+  .header-nav .menu-item {
+    margin: 0 15px; /* Khoảng cách giữa các mục */
+    white-space: nowrap; /* Không cho xuống dòng */
+  }
+  
+  .header-nav .icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Khoảng cách giữa các icon */
+  }
+
+.mobile-menu{
+    background-color: transparent !important;
+}
+
+/* Header cơ bản */
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Nền header */
+  z-index: 1000; /* Luôn hiển thị trên các phần tử khác */
+}
+
+/* Logo */
+.logo {
+  flex-shrink: 0;
+}
+
+/* Menu */
+.menu {
+  display: none; /* Ẩn menu trên mobile */
+}
+
+.menu-item {
+  margin: 0 15px;
+  white-space: nowrap;
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 999;
+}
+
+.mobile-menu a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: #333;
+}

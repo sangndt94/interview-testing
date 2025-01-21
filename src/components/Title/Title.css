@@ -1,0 +1,23 @@
+
+/* title */
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 22px; /* Khoảng cách trên và dưới */
+  }
+  
+  .section-title .line {
+    flex: 1; /* Để đường kẻ chiếm toàn bộ không gian có thể */
+    height: 1px; /* Độ dày đường kẻ */
+    background-color: #ccc; /* Màu xám */
+    margin: 0 10px; /* Khoảng cách giữa đường kẻ và chữ */
+  }
+  
+  .section-title h2 {
+    color: #f54c00; /* Màu cam */
+    font-weight: bold; /* Đậm chữ */
+    text-transform: uppercase; /* Viết hoa toàn bộ */
+    margin: 0; /* Xóa khoảng cách mặc định */
+  }
+  

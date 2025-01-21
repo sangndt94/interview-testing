@@ -1,0 +1,16 @@
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f54c00; /* Màu cam */
+  top: 50%; /* Căn giữa dọc */
+  transform: translateY(-50%);
+}
+
+.swiper-button-next {
+  right: 10px; /* Canh sát mép phải */
+}
+
+.swiper-button-prev {
+  left: -10px; /* Canh sát mép trái */
+}

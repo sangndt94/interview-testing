@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* calendar */
+.fc-toolbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff5733;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Tùy chỉnh ngày trong grid */
+.fc-daygrid-day {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f0f0f0;
+  height: 100px; /* Đặt chiều cao cố định cho các ô ngày */
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.event-libre {
+  background-color: #ffecec !important; /* Màu nền cho Libre */
+  border: 1px solid #ff9999;
+  color: #ff3333 !important; /* Màu chữ cho Libre */
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Ngày Occupé */
+.event-occupé {
+  background-color: #f0f0f0 !important; /* Màu nền cho Occupé */
+  border: 1px solid #ccc;
+  color: #8b8b8b !important; /* Màu chữ cho Occupé */
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Căn chỉnh nội dung ô */
+.fc-daygrid-day:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Căn giữa header (Mon, Tue, ...) */
+.fc-col-header-cell {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #8b8b8b;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Nút điều hướng năm */
+.fc-toolbar-chunk .fc-prevYear-button,
+.fc-toolbar-chunk .fc-nextYear-button {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fc-toolbar-chunk .fc-prevYear-button:hover,
+.fc-toolbar-chunk .fc-nextYear-button:hover {
+  background-color: #ff7849;
+}
+
+.fc-toolbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff5733;
+  text-align: center;
+  display: inline-block; /* Hiển thị tiêu đề trên cùng dòng */
+  margin: 0; /* Loại bỏ khoảng cách mặc định */
+}
+
+/* Wrapper của tiêu đề và nút */
+.fc-toolbar {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px; /* Khoảng cách giữa mũi tên và tiêu đề */
+}
+
+/* Nút mũi tên */
+.fc-prev-button, .fc-next-button {
+  background-color: transparent !important;
+  border: none !important;
+  color: #ff5733 !important;
+  font-size: 1.5rem !important;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.fc-prev-button:hover, .fc-next-button:hover {
+  color: #ff7849 !important;
+}
