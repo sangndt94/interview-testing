@@ -1,11 +1,10 @@
 import React, { useContext, useState } from "react";
-import "./FormComponent.css"; // Tệp CSS tùy chỉnh
+import "./FormComponent.css"; 
 import { AppContext } from "../../../context";
 import { Editor } from "@tinymce/tinymce-react";
 
 const FormComponent = () => {
-  const { language, changeLanguage, changeDataLanguage, dataLanguage } =
-    useContext(AppContext);
+  const { dataLanguage } = useContext(AppContext);
   const [content, setContent] = useState("");
   return (
     <div className="form-container">
@@ -44,7 +43,7 @@ const FormComponent = () => {
             value={content}
             onEditorChange={(newValue) => setContent(newValue)}
             init={{
-              width:'100%',
+              width: "100%",
               height: 300,
               menubar: false,
               plugins: [
@@ -68,7 +67,9 @@ const FormComponent = () => {
         </div>
 
         <div className="form-group flex  items-center">
-          <label htmlFor="file" className="mr-20 mt-5">{dataLanguage?.[0]?.bloc_2_2?.btn_4[0]}:</label>
+          <label htmlFor="file" className="mr-20 mt-5">
+            {dataLanguage?.[0]?.bloc_2_2?.btn_4[0]}:
+          </label>
           <div className="file-upload">
             <span className="file-icon">📎</span>
             <label className="file-text" htmlFor="file">

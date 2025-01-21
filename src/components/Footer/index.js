@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../../context";
 
 const Footer = () => {
-  const { changeDataLanguage, dataLanguage } = useContext(AppContext);
+  const { dataLanguage } = useContext(AppContext);
   return (
     <footer className="bg-red-900 text-white ">
       <div className="text-center relative">

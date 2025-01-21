@@ -1,9 +1,7 @@
 import React, { createContext, useState } from "react";
 
-// Tạo một Context
 export const AppContext = createContext();
 
-// Tạo Provider
  const AppProvider = ({ children }) => {
   const [language, setLanguage] = useState("en");
   const [dataLanguage, setDataLanguage] = useState([]);

@@ -8,8 +8,7 @@ import Title from "../../components/Title";
 
 export default function Bloc2() {
   const { t, i18n } = useTranslation();
-  const { language, changeLanguage, changeDataLanguage, dataLanguage } =
-    useContext(AppContext);
+  const { dataLanguage } = useContext(AppContext);
   // Sự kiện cho lịch
   const events = [
     { title: t("Libre"), date: "2025-01-28", className: "event-libre" },

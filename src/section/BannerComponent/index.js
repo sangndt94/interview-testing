@@ -3,9 +3,12 @@ import "./BannerComponent.css";
 export default function BannerComponent() {
   return (
     <div className="image-container">
-      {/* Hình ảnh */}
-      <img src="/image/Hero image.png" alt="Example" width={"100%"} className="lg:h-full xs:h-screen banner_main" />
-      {/* Các icon */}
+      <img
+        src="/image/Hero image.png"
+        alt="Example"
+        width={"100%"}
+        className="lg:h-full xs:h-screen banner_main"
+      />
       <div className="icons-container lg:pb-24 !flex justify-evenly">
         <div className="icon">
           <img src="/icon/1.png" alt="Mountain" />

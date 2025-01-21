@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context";
 const Bloc4 = () => {
-  const { language, changeLanguage, changeDataLanguage, dataLanguage } =
-    useContext(AppContext);
+  const { dataLanguage } = useContext(AppContext);
   return (
     <div>
       <div className=" mt-20 xl:px-56 mb-10 lg:px-2 lg:px-2">
@@ -28,12 +27,12 @@ const Bloc4 = () => {
             <div className="mt-16 lg:mt-24 flex flex-col lg:flex-row ">
               <div className="lg:text-left flex">
                 <hr className="hidden xl:block border-2 w-full mt-3 text-black bg-black" />
-                <p className="text-gray-700 leading-relaxed pl-6 text-left">
+                <div className="text-gray-700 leading-relaxed pl-6 text-left">
                   <h2 className="text-2xl font-semibold text-left">
                     {dataLanguage?.[0]?.bloc_4?.subtitle}
                   </h2>
                   {dataLanguage?.[0]?.bloc_4?.text}
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -66,7 +65,6 @@ const Bloc4 = () => {
         </div>
       </div>
       {/* ----------------------------------------------------------------------------- */}
-      
     </div>
   );
 };

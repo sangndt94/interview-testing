@@ -3,42 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Import CSS của Swiper
 import "swiper/css/navigation"; // Import CSS cho Navigation
 import { Navigation } from "swiper/modules"; // Import Navigation nếu Swiper là v8+
-import Title from "../../components/Title";
 import { AppContext } from "../../context";
 
 const Bloc3 = () => {
-  const { language, changeLanguage, changeDataLanguage, dataLanguage } =
-    useContext(AppContext);
-  const slides = [
-    {
-      img: "https://via.placeholder.com/300x200",
-      title: "Case title",
-      subtitle: "Case sous-titre",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...",
-    },
-    {
-      img: "https://via.placeholder.com/300x200",
-      title: "Case title",
-      subtitle: "Case sous-titre",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...",
-    },
-    {
-      img: "https://via.placeholder.com/300x200",
-      title: "Case title",
-      subtitle: "Case sous-titre",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...",
-    },
-    {
-      img: "https://via.placeholder.com/300x200",
-      title: "Case title",
-      subtitle: "Case sous-titre",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...",
-    },
-  ];
+  const { dataLanguage } = useContext(AppContext);
 
   return (
     <div>
@@ -46,7 +14,9 @@ const Bloc3 = () => {
         <div className="w-full xl:w-[75%] pr-8">
           {/* Tiêu đề chính */}
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-orange-600 text-2xl font-bold">{dataLanguage?.[0]?.bloc_3?.title}</h2>
+            <h2 className="text-orange-600 text-2xl font-bold">
+              {dataLanguage?.[0]?.bloc_3?.title}
+            </h2>
             <button className="text-gray-500 text-sm font-medium hover:text-orange-600">
               {dataLanguage?.[0]?.bloc_3?.more_info}
             </button>
